@@ -52,7 +52,7 @@ public class ProductServiceImpl implements ProductService {
                 product.setDescription((String) k.get("description"));
                 product.setInStock((int) k.get("isInStock") == 1? true: false );
                 product.setTitle((String)k.get("nameSearch") );
-                product.setSalesPrice(((Double)k.get("offerPrice")).intValue());
+                //product.setSalesPrice(((Double)k.get("offerPrice")).intValue());
                 productDTOs.add(product);
             }
             response.setProductsList(productDTOs);
@@ -70,7 +70,7 @@ public class ProductServiceImpl implements ProductService {
                 product.setDescription((String) k.get("description"));
                 product.setInStock((int) k.get("isInStock") == 1? true: false );
                 product.setTitle((String)k.get("nameSearch") );
-                product.setSalesPrice(((Double)k.get("offerPrice")).intValue());
+                //product.setSalesPrice(((Double)k.get("offerPrice")).intValue());
                 locationDTOs.add(product);
             }
             response.setLocationList(locationDTOs);

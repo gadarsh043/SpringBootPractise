@@ -37,4 +37,14 @@ public class Products {
     public void setTitle(String title) {
         this.title = title;
     }
+
+    @Override
+    public String toString() {
+        return "Products{" +
+                "inStock=" + inStock +
+                ", salesPrice=" + salesPrice +
+                ", description='" + description + '\'' +
+                ", title='" + title + '\'' +
+                '}';
+    }
 }

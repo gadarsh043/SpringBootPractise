@@ -21,4 +21,12 @@ public class ProductsResponse {
     public void setProductsList(List<Products> productsList) {
         this.productsList = productsList;
     }
+
+    @Override
+    public String toString() {
+        return "ProductsResponse{" +
+                "productsList=" + productsList +
+                ", locationList=" + locationList +
+                '}';
+    }
 }
